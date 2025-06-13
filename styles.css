@@ -1,0 +1,51 @@
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+.dark {
+  background-color: #111827;
+}
+.dark .bg-white {
+  background-color: #1f2937;
+}
+.dark .text-gray-900 {
+  color: #d1d5db;
+}
+.dark .text-gray-600 {
+  color: #9ca3af;
+}
+.dark .border-gray-300 {
+  border-color: #4b5563;
+}
+.transaction-item:hover {
+  background-color: #f3f4f6;
+}
+.dark .transaction-item:hover {
+  background-color: #374151;
+}
+button:hover {
+  transform: translateY(-1px);
+}
+canvas {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.dark canvas {
+  border-color: #4b5563;
+}
+input, select {
+  color: #000000 !important; /* Black text in light mode, high specificity */
+}
+.dark input, .dark select {
+  color: #e5e7eb !important; /* Light gray text in dark mode */
+}
+input::placeholder, select::placeholder {
+  color: #6b7280; /* Gray placeholder in light mode */
+}
+.dark input::placeholder, .dark select::placeholder {
+  color: #9ca3af; /* Lighter gray placeholder in dark mode */
+}
